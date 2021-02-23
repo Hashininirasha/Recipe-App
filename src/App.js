@@ -1,5 +1,7 @@
 import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Form from './components/Form.jsx';
 
 function App() {
   return (
@@ -7,6 +9,7 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Recipe App</h1>
       </header>
+      <Form />
     </div>
   );
 }
