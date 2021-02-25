@@ -1,12 +1,11 @@
 import React from "react";
+import recipe from './recipe.jsx'
 
 function Foodlist() {
     return(
         <React.Fragment>
             <ul>
-                <li>Name - Kottu -indridies- chili</li>
-                <li>Name - Egg Rice -indridies- Rice,Egg</li>
-                <li>Name - pittu -indridies- coconut</li>
+                <recipe/>
 
             </ul>
         </React.Fragment>
