@@ -5,7 +5,8 @@ import Foodlist from './components/Foodlist.jsx';
 
 const App = () =>{
   const APP_ID="5661db5d"
-  const url = "https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}";
+  const APP_KEY="b5c9bab94750b4d7343f70237d7b5a9d";
+  const url = 'https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}';
 
  
   return (
