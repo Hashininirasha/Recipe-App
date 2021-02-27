@@ -16,8 +16,9 @@ const App = () =>{
     <div className="App">
       <h1 onClick={getData}><div class="p-3 mb-2 bg-primary text-white">Food Recipe App</div></h1><br/>
       <form className="search-form">
-        <input class="form-control" type="text" placeholder="Search Food" autoComplete="off"/>
-        <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search"/>
+        
+        <input class="btn btn-outline-primary my-2 my-sm-0" type="text" placeholder="Search Food" autoComplete="off"/>
+        <input class="btn btn-outline-primary my-2 my-sm-0" type="submit" value="Search"/>
       </form>
     </div>
     
