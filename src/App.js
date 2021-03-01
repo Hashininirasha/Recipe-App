@@ -12,6 +12,7 @@ const App = () =>{
 
   const getData = async () => {
     const result = await Axios.get(url);
+    setrecipes(result.data.hits)
     console.log(result);
     setQuery("")
   };
@@ -30,6 +31,10 @@ const App = () =>{
         <input class="btn btn-outline-primary my-2 my-sm-0" type="text" placeholder="Search Food" autoComplete="off" onChange={onChange} value={query}/>
         <input class="btn btn-outline-primary my-2 my-sm-0" type="submit" value="Search"/>
       </form>
+      <div className="recipes">
+        {recipes !==[]&&recipes.map(recipe => 
+          <h2>{recipe.recipe.label}</h2>)}
+      </div>
     </div>
     
   )
