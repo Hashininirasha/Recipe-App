@@ -5,6 +5,7 @@ import './App.css'
 
 const App = () =>{
   const [query,setQuery]=useState("");
+  const [recipes, setrecipes] = useState([]);
   const APP_ID="5661db5d";
   const APP_KEY="b5c9bab94750b4d7343f70237d7b5a9d";
   const url = 'https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}';
@@ -12,7 +13,7 @@ const App = () =>{
   const getData = async () => {
     const result = await Axios.get(url);
     console.log(result);
-    setQuery(" ")
+    setQuery("")
   };
   const onChange = e => {
     setQuery(e.target.value)
